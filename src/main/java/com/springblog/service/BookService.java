@@ -35,8 +35,13 @@ public class BookService {
         return bookDao.findAllByCategory(category);
     }
 
+    public List<Book> Search(String keywords){
+//        System.out.println("service 接收" + keywords);
+        return bookDao.findAllByTitleLikeOrAuthorLike('%' + keywords + '%', '%' + keywords + '%');
+    }
+
     public List<Book> listByAuthor(String author){
-        return bookDao.findAllByAuthor(author);
+        return bookDao.findAllByAuthorLike(author);
     }
 
 }
