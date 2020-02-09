@@ -1,4 +1,4 @@
-package com.springblog.UserService;
+package com.springblog.service;
 
 import com.springblog.dao.UserDao;
 import com.springblog.pojo.User;

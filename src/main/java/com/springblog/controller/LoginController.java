@@ -1,6 +1,6 @@
 package com.springblog.controller;
 
-import com.springblog.UserService.UserService;
+import com.springblog.service.UserService;
 import com.springblog.pojo.User;
 import com.springblog.result.Result;
 import org.springframework.beans.factory.annotation.Autowired;
