@@ -17,7 +17,7 @@ public class CategoryService {
     public List<Category>list(){
 //        Sort sort = new Sort(Sort.Direction.DESC,"id");
         //springboot2.2.1（含）以上的版本Sort已经不能再实例化了，构造方法已经是私有的了！
-        Sort sort = Sort.by(Sort.Direction.DESC,"id");
+        Sort sort = Sort.by(Sort.Direction.ASC,"id");
         return categoryDao.findAll(sort);
     }
     public Category get(int id){
